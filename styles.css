@@ -141,54 +141,183 @@ header .navRight span:hover {
 
 /* ======================== Solution Section CSS =========================*/
 
-.solution h1{
+.solution h1 {
   font-weight: bold;
   font-size: 3rem;
-text-align: center;
-margin-bottom: 3rem;
-color: rgba(6,49,67,1)
+  text-align: center;
+  margin-bottom: 3rem;
+  color: rgba(6, 49, 67, 1);
 }
 
-.solution .box-container{
-    display: flex;
-    /* flex-wrap: wrap; */
-    gap: 4rem;
-    padding: 0 5rem 0 5rem;
+.solution .box-container {
+  display: flex;
+  /* flex-wrap: wrap; */
+  gap: 4rem;
+  padding: 0 5rem 0 5rem;
 }
 
-.solution .box-container .box{
-    flex: 1 1 30rem;
-    overflow: hidden;
+.solution .box-container .box {
+  flex: 1 1 30rem;
+  overflow: hidden;
 }
 
-
-.solution .box-container .box img{
-    height: 25rem;
-    width: 100%;
-    object-fit: cover;
-    border-radius: 1.5rem;
+.solution .box-container .box img {
+  height: 25rem;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 1.5rem;
 }
 
-.solution .box-container .box .content{
-    padding: 2rem;
+.solution .box-container .box .content {
+  padding: 2rem;
 }
 
-.solution .box-container .box .content h3{
-    font-size: 2.5rem;
-    font-weight: bold;
-    color: rgba(0,80,112,1);
-    text-align: center;
+.solution .box-container .box .content h3 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: rgba(0, 80, 112, 1);
+  text-align: center;
 }
 
-.solution .box-container .box .content p{
-    font-size: 1.7rem;
-    color: rgba(0,80,112,1);
-    padding: 1rem 0;
+.solution .box-container .box .content p {
+  font-size: 1.7rem;
+  color: rgba(0, 80, 112, 1);
+  padding: 1rem 0;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 660px) {
   .solution .box-container {
     /* display: initial;   */
     flex-wrap: wrap;
+  }
+}
+
+/* ======================== Testimonials Section CSS =========================*/
+
+.testimonials h1 {
+  font-weight: bold;
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 3rem;
+  color: rgba(6, 49, 67, 1);
+}
+
+.testimonial-container {
+  width: 70%;
+  margin-right: auto;
+  margin-left: auto;
+}
+.review {
+  background: #fff;
+  padding: 1.5rem 2rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  border: 2px solid lightgray;
+  transition: all 1s linear;
+  text-align: center;
+}
+.review:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.main {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.left-container {
+  width: 50%;
+}
+.img-container {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin-bottom: 1.5rem;
+}
+#person-img {
+  width: 100%;
+  display: block;
+  height: 100%;
+  object-fit: cover;
+  position: relative;
+}
+
+#author {
+  margin-bottom: 0.25rem;
+  text-align: start;
+  font-family: Segoe UI;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  color: rgba(0, 80, 112, 1);
+}
+#job {
+  margin-bottom: 0.5rem;
+  text-align: start;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  color: rgba(107, 109, 110, 1);
+  font-family: Segoe UI;
+}
+.middle-container {
+  padding: 0 2rem 0 2rem;
+}
+
+.testimonials h3 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  text-align: left;
+  font-family: Segoe UI;
+  color: rgba(0, 80, 112, 1);
+}
+#info {
+  margin-bottom: 0.75rem;
+  font-style: normal;
+  font-weight: normal;
+  color: rgba(107, 109, 110, 1);
+  text-align: left;
+  font-family: Segoe UI;
+  font-size: 20px;
+}
+.prev-btn,
+.next-btn {
+  font-size: 2rem;
+  background: transparent;
+  border-color: transparent;
+  margin: 0 0.5rem;
+  transition: all 0.3s linear;
+  cursor: pointer;
+}
+.prev-btn:hover,
+.next-btn:hover {
+  color: rgba(242, 76, 98, 1);
+}
+
+@media (max-width: 660px) {
+  .testimonials .main {
+    display: block;
+  }
+  .testimonials .left-container {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2rem;
+  }
+  .testimonials h3 {
+    font-size: 20px;
+  }
+  .testimonials #info {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 900px) {
+  .testimonials h3 {
+    font-size: 20px;
+  }
+  .testimonials #info {
+    font-size: 15px;
   }
 }
