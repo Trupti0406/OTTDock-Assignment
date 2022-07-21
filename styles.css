@@ -19,7 +19,7 @@ html {
   scroll-behavior: smooth;
 }
 header {
-  position: fixed;
+  position: relative;
   top: 0;
   left: 0;
   right: 0;
@@ -28,6 +28,7 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: 2rem 9%;
+  background-color: #fff;
 }
 
 header .logo {
@@ -39,10 +40,11 @@ header .navbar a {
   color: #333;
   font-size: 1.5rem;
   margin: 0 2.5rem;
+  text-decoration: none;
 }
 
-header .navbar span{
-    font-size: 1rem;
+header .navbar span {
+  font-size: 1rem;
 }
 header .navbar a:hover {
   color: rgba(242, 76, 98, 1);
@@ -125,32 +127,68 @@ header .navRight span:hover {
   }
 
   header .navbar a {
+    width: 100%;
     display: block;
     border-radius: 0.5rem;
     padding: 1rem;
     margin: 1rem 0;
-    background:#222;
+    background: #222;
     color: #fff;
   }
 }
 
-
 /* ========================first-section CSS =========================*/
-.first-section{
-  /* The image used */
-  background-image: url("./assets/pic1.jpg");
 
-  /* Full height */
-  height: 100%; 
+/* ======================== Solution Section CSS =========================*/
 
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+.solution h1{
+  font-weight: bold;
+  font-size: 3rem;
+text-align: center;
+margin-bottom: 3rem;
+color: rgba(6,49,67,1)
 }
-/* .first-section{
-    background-image: url(./assets/pic1.jpg);
-    background-repeat: no-repeat;
-  background-attachment: fixed;  
-  background-size: cover;
-} */
+
+.solution .box-container{
+    display: flex;
+    /* flex-wrap: wrap; */
+    gap: 4rem;
+    padding: 0 5rem 0 5rem;
+}
+
+.solution .box-container .box{
+    flex: 1 1 30rem;
+    overflow: hidden;
+}
+
+
+.solution .box-container .box img{
+    height: 25rem;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 1.5rem;
+}
+
+.solution .box-container .box .content{
+    padding: 2rem;
+}
+
+.solution .box-container .box .content h3{
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: rgba(0,80,112,1);
+    text-align: center;
+}
+
+.solution .box-container .box .content p{
+    font-size: 1.7rem;
+    color: rgba(0,80,112,1);
+    padding: 1rem 0;
+}
+
+@media (max-width: 600px) {
+  .solution .box-container {
+    /* display: initial;   */
+    flex-wrap: wrap;
+  }
+}
