@@ -321,3 +321,31 @@ header .navRight span:hover {
     font-size: 15px;
   }
 }
+
+
+/* ======================== Footer CSS =========================*/
+
+.footer-container{
+  background-color: #333;
+  border: 2px solid black;
+  padding: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 2rem;
+  color: white;
+}
+
+.column-1, .column-6{
+  border: 2px solid red;
+  width: 20%;
+}
+
+.column-2, .column-3, .column-4, .column-5{
+  border: 2px solid green;
+  width: 15%;
+}
+
+.footer-logo{
+  width: 12rem;
+}
