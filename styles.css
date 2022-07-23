@@ -199,23 +199,23 @@ header .navRight span:hover {
 
 @media (max-width: 768px) {
   .container-1 .inner {
-    width: 600px;
-    left: 25rem;
+    width: 300px;
+    left: 17rem;
   }
   .container-1 .first-text {
-    font-size: 25px;
-    margin-left: 5rem;
-    margin-top: 2rem;
+    font-size: 16px;
+    margin-left: -9rem;
+    margin-top: 4rem;
   }
   .container-1 .second-text {
-    font-size: 14px;
-    margin-top: 3rem;
-    margin-left: 5rem;
+    font-size: 12px;
+    margin-left: -9rem;
+    margin-top: 1rem;
   }
 
   .container-1 .inner-2 {
-    width: 600px;
-    left: 25rem;
+    width: 300px;
+    left: 17rem;
   }
 }
 
@@ -275,22 +275,12 @@ header .navRight span:hover {
   background-color: rgb(13, 110, 148);
   border-radius: 12rem;
   width: 23rem;
-  margin-left: 15rem;
+  /* margin-left: 10rem; */
   height: 6rem;
   font-family: Segoe UI;
   color: #fff;
   font-weight: bold;
 }
-/* @media (max-width: 1200px) {
-  .demo-div {
-    margin-left: auto;
-    left: 500px; 
-    top: 680px;
-  }
-  .star-now-btn {
-    margin-left: 5rem;
-  }
-} */
 
 @media (max-width: 1687px) {
   .sub-image-div {
@@ -303,7 +293,7 @@ header .navRight span:hover {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    left: 150px;
+    left: 500px;
     top: 680px;
     width: 300px;
     height: 47px;
@@ -318,6 +308,94 @@ header .navRight span:hover {
   }
   .star-now-btn {
     margin-left: 5rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .demo-div {
+    left: 53px;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 900px) {
+  .demo-div {
+    left: 328px;
+    font-size: 20px;
+  }
+}
+
+/* ============================================================= */
+
+.section-2 .content {
+  display: flex;
+  justify-content: center;
+  padding: 0 8rem 0 8rem;
+}
+
+.section-2 span {
+  text-align: left;
+  font-family: Segoe UI;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  color: rgba(0, 80, 112, 1);
+}
+
+.section-2 p {
+  text-align: left;
+  font-family: Segoe UI;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 25px;
+  color: rgba(0, 80, 112, 1);
+}
+
+.section-2 .image {
+  width: 867px;
+  height: 488px;
+  overflow: visible;
+  border: 1px solid lightgrey;
+  border-radius: 2rem;
+  box-shadow: rgb(0 0 0 / 60%) 5px 5px 8px;
+}
+
+@media (max-width: 1430px) {
+  .section-2 .content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 900px) {
+  .section-2 .image {
+    width: 600px;
+    height: 350px;
+  }
+}
+
+@media (max-width: 500px) {
+  .section-2 .image {
+    width: 300px;
+    height: 350px;
+  }
+
+  .section-2 span {
+    text-align: left;
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+  }
+
+  .section-2 p {
+    text-align: left;
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    color: rgba(0, 80, 112, 1);
   }
 }
 
